@@ -1,0 +1,21 @@
+<!-- INíCIO do CONTEÚDO -->
+<section class="content-header">
+  <h1>
+    Todos os Restaurantes
+  </h1>
+</section>
+
+
+<section class="content">
+
+  <div class="row">
+    <!--estou pegando os dados que estão vindo de restaurantes -->
+    <div class="col-sm-6 col-xs-12" *ngFor="let restaurant of restaurantes" >
+      <!-- e representando com o componente restaurate-->
+      <mt-restautante [restaurante]="restaurant"></mt-restautante>
+    </div>
+  </div>
+
+</section>
+
+<!-- FIM  do CONTEÚDO -->
